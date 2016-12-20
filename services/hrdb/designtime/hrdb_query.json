@@ -1,0 +1,40 @@
+{
+  "name" : "hrdb",
+  "description" : "Queries for hrdb",
+  "queries" : [ {
+    "name" : "employeedatabyID",
+    "query" : "select * from Employee where DEPT_ID =:id",
+    "comment" : "getemployeedatabyID",
+    "description" : null,
+    "nativeSql" : true,
+    "returnsSingleResult" : false,
+    "update" : false,
+    "queryParams" : [ {
+      "paramName" : "id",
+      "paramType" : "java.lang.Integer",
+      "testValue" : "1",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    } ],
+    "outputType" : "hrdbemployeedatabyIDrtnType",
+    "returnTypeMetadata" : {
+      "BIRTHDATE" : "java.sql.Date",
+      "CITY" : "java.lang.String",
+      "DEPT_ID" : "java.lang.Integer",
+      "EMP_ID" : "java.lang.Integer",
+      "FIRSTNAME" : "java.lang.String",
+      "JOB_TITLE" : "java.lang.String",
+      "LASTNAME" : "java.lang.String",
+      "MANAGER_ID" : "java.lang.String",
+      "PASSWORD" : "java.lang.String",
+      "PICURL" : "java.lang.String",
+      "ROLE" : "java.lang.String",
+      "STATE" : "java.lang.String",
+      "STREET" : "java.lang.String",
+      "TENANT_ID" : "java.lang.Integer",
+      "USERNAME" : "java.lang.String",
+      "ZIP" : "java.lang.String"
+    }
+  } ]
+}
